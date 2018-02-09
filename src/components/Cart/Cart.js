@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-export default class App extends Component {
+export default class Cart extends Component {
   render() {
     return (
-      <div>w00t</div>
+      <div>Cart</div>
     );
   }
 }
