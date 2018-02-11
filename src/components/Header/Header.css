@@ -1,0 +1,27 @@
+.header {
+  background-color: rgb(16, 27, 204);
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+}
+
+.title {
+  font-weight: 800;
+  position: relative;
+  left: 10px;
+}
+
+.shop {
+  position: relative;
+  left: 50px;
+  font-size: 16px;
+}
+
+.cart {
+  position: absolute;
+  right: 100px;
+  top: 19px;
+  font-size: 16px;
+}
