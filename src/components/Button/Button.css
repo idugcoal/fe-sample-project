@@ -1,12 +1,19 @@
 .button {
   height: 40px;
   width: 140px;
-  border: 1px solid rgb(227, 219, 219);
-  border-radius: 5px;
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 8px;
   text-align: center;
   line-height: 40px;
   position: relative;
   top: 50px;
   margin: auto;
   font-family: 'Lato', sans-serif;
+}
+
+.button:hover {
+  cursor: pointer;
+  transition: 300ms;
+  border-width: 2px;
 }

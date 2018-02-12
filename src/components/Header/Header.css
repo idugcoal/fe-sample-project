@@ -1,27 +1,36 @@
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .header {
   background-color: rgb(16, 27, 204);
   color: white;
   padding: 10px;
   font-size: 24px;
   font-family: 'Lato', sans-serif;
+  height: 40px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .title {
   font-weight: 800;
-  position: relative;
-  left: 10px;
+  margin: 30px;
 }
 
 .shop {
-  position: relative;
-  left: 50px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .cart {
-  position: absolute;
-  right: 100px;
-  top: 19px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
 }
+
