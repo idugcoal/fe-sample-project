@@ -15,13 +15,20 @@
 
 .container {
   padding: 30px;
-  height: 600px;
-  max-width: 500px;
+  max-height: 800px;
+  max-width: 400px;
   margin: auto;
   background-color: pink;
   position: relative;
   top: 150px;
 
+}
+
+.empty {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .title {
@@ -31,5 +38,5 @@
 
 .cart_items {
   border-bottom: 2px solid black;
-  width: 500px;
+  width: 400px;
 }

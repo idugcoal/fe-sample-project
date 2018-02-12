@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
 import styles from './CartItem.css';
 
 const CartItem = ({ filename, price, name, onClick }) => (

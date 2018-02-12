@@ -10,7 +10,7 @@ export default class App extends Component {
     this.state = {
       cart: [],
       products: getProducts(),
-      cartOverlay: false,
+      overlay: false,
     };
 
     this.toggleCart = this.toggleCart.bind(this);
@@ -20,7 +20,7 @@ export default class App extends Component {
 
   toggleCart() {
     this.setState({
-      cartOverlay: !this.state.cartOverlay,
+      overlay: !this.state.overlay,
     });
   }
 
@@ -31,7 +31,6 @@ export default class App extends Component {
   }
 
   removeFromCart(product) {
-    console.log('remove', product)
     const array = this.state.cart;
     const index = array.indexOf(product);
     array.splice(index, 1);
@@ -44,7 +43,12 @@ export default class App extends Component {
     return (
       <div >
         <Header onClick={this.toggleCart} />
-        {this.state.cartOverlay && <Cart selected={this.state.cart} onClick={this.removeFromCart} />}
+        {this.state.overlay &&
+          <Cart
+            selected={this.state.cart}
+            remove={this.removeFromCart}
+            back={this.toggleCart}
+          />}
         <Shop products={this.state.products} onClick={this.addToCart} />
       </div>
     );
