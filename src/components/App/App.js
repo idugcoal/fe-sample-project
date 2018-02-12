@@ -42,13 +42,13 @@ export default class App extends Component {
   render() {
     return (
       <div >
-        <Header onClick={this.toggleCart} />
         {this.state.overlay &&
           <Cart
             selected={this.state.cart}
             remove={this.removeFromCart}
             back={this.toggleCart}
           />}
+        <Header onClick={this.toggleCart} count={this.state.cart.length} />
         <Shop products={this.state.products} onClick={this.addToCart} />
       </div>
     );

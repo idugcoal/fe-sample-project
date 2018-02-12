@@ -8,7 +8,12 @@ const ShopItem = ({ filename, price, name, onClick }) => (
     <img src={`../../assets/images/${filename}`} alt={`${name}`} />
     <div className={styles.name}>{name}</div>
     <div className={styles.price}>{`$${(price / 100).toFixed(2)}`}</div>
-    <Button onClick={() => onClick({ filename, price, name })}>Add to cart</Button>
+    <Button
+      className={styles.button}
+      onClick={() => onClick({ filename, price, name })}
+    >
+      Add to cart
+    </Button>
   </div>
 );
 

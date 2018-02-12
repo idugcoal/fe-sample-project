@@ -13,6 +13,8 @@ ul {
   width: 100%;
   display: flex;
   align-items: center;
+  margin: 0;
+  z-index: 100;
 }
 
 .title {
@@ -34,3 +36,15 @@ ul {
   margin-right: 40px;
 }
 
+.counter {
+  margin-left: 10px;
+  background-color: white;
+  color: rgb(16, 27, 204);
+  height: 24px;
+  width: 40px;
+  line-height: 24px;
+  border-radius: 25%;
+  font-weight: 800;
+  align-items: center;
+  text-align: center;
+}

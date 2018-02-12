@@ -12,6 +12,11 @@ export default class Cart extends Component {
     this.calculateTotal = this.calculateTotal.bind(this);
   }
 
+  calculateTotal() {
+    const total = this.props.selected.reduce((all, current) => all += current.price, 0);
+    return (total / 100).toFixed(2);
+  }
+
   renderCartItems() {
     if (this.props.selected.length === 0) {
       return (
@@ -30,10 +35,6 @@ export default class Cart extends Component {
         onClick={this.props.remove}
       />));
   }
-  calculateTotal() {
-    let total = this.props.selected.reduce((all, current) => all += current.price, 0);
-    return (total / 100).toFixed(2);
-  }
 
   render() {
     return (
@@ -43,8 +44,8 @@ export default class Cart extends Component {
           <div className={styles.cart_items}>
             {this.renderCartItems()}
           </div>
-          <Button onClick={this.props.back}>Back</Button>
           <Total total={this.calculateTotal()} />
+          <Button onClick={this.props.back}>Back</Button>
         </div>
       </div>
     );
@@ -53,7 +54,6 @@ export default class Cart extends Component {
 
 Cart.propTypes = {
   selected: PropTypes.array,
-  onClick: PropTypes.func,
   back: PropTypes.func,
   remove: PropTypes.func,
 };

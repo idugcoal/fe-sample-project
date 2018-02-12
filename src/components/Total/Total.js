@@ -4,7 +4,7 @@ import styles from './Total.css';
 
 const Total = ({ total }) => (
   <div className={styles.container} >
-    <div className={styles.title}>Total:</div>
+    <div className={styles.title}>Total</div>
     <div className={styles.price}>{`$${total}`}</div>
   </div>
 );
