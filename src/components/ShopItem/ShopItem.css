@@ -8,8 +8,8 @@ img {
   width: 400px;
   margin: 0 auto;
   border: 2px solid rgb(227, 219, 219);
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px rgb(240, 240, 240);
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px rgb(240, 240, 240);
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgb(80, 80, 80);
@@ -24,7 +24,7 @@ img {
   position: relative;
   text-align: center;
   margin: auto;
-  top: 12px;
+  top: 20px;
 }
 
 .price {
@@ -38,7 +38,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 10px;
-  grid-row-gap: 20px;
+  grid-row-gap: 10px;
 }
 
 .button {

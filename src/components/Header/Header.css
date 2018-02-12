@@ -9,12 +9,15 @@ ul {
   padding: 10px;
   font-size: 24px;
   font-family: 'Lato', sans-serif;
-  height: 40px;
+  height: 48px;
+  line-height: 48px;
   width: 100%;
   display: flex;
   align-items: center;
   margin: 0;
+  position: fixed;
   z-index: 100;
+  top: -10px;
 }
 
 .title {
