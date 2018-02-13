@@ -1,13 +1,16 @@
-Cart.ly
-=======
-A shopping cart 
+# Cart.ly
+
+A shopping cart
 
 # To run
+
 ```
 npm install
-npm start
+npm dev
 ```
+
 Go to http://localhost:8080
 
 # About
-This was built with React. CSS Modules were used to allow for local scoping of CSS class names. 
+
+This was built with React. CSS Modules were used to allow for local scoping of CSS class names.

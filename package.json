@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "postinstall": "webpack -p",
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/idugcoal/fe-sample-project#readme",
   "dependencies": {
     "css-loader": "^0.28.9",
+    "express": "^4.16.2",
     "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
