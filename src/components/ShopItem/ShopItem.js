@@ -5,7 +5,7 @@ import styles from './ShopItem.css';
 
 const ShopItem = ({ filename, price, name, onClick }) => (
   <div className={styles.item}>
-    <img src={`../../../assets/images/${filename}`} alt={`${name}`} />
+    <img src={`./assets/images/${filename}`} alt={`${name}`} />
     <div className={styles.name}>{name}</div>
     <div className={styles.price}>{`$${(price / 100).toFixed(2)}`}</div>
     <Button
